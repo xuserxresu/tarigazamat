@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UAE Business Solutions</title>
+    <title>حلول الأعمال في الإمارات</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Add Arabic font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -15,20 +22,20 @@
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
                     <a href="#home">
-                        <img src="https://www.dropbox.com/scl/fi/t90j450pdb6j1ucnnzqfn/sharfi_grey.png?rlkey=vj5bbx3udet64tjaku0yqylq1&st=pjso2xlp&raw=1" alt="UAE Business Solutions Logo" class="h-10">
+                        <img src="https://www.dropbox.com/scl/fi/t90j450pdb6j1ucnnzqfn/sharfi_grey.png?rlkey=vj5bbx3udet64tjaku0yqylq1&st=pjso2xlp&raw=1" alt="شعار حلول الأعمال في الإمارات" class="h-10">
                     </a>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
-                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition">Services</a>
-                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                <div class="hidden md:flex gap-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition">الرئيسية</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition">خدماتنا</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">اتصل بنا</a>
                 </div>
-                <div class="flex items-center space-x-4">
-                    <a href="arabic.html" class="text-gray-700 hover:text-blue-600 transition">
-                        العربية
-                    </a>
+                <div class="flex items-center gap-4">
                     <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
-                        Get Started
+                        ابدأ الآن
+                    </a>
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition">
+                        English
                     </a>
                 </div>
             </div>
@@ -36,22 +43,24 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-32 pb-20 bg-gradient-to-br from-blue-50 to-white">
+    <section id="home" class="pt-32 pb-20 bg-gradient-to-bl from-blue-50 to-white">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2" data-aos="fade-right">
-                    <h1 class="text-5xl font-bold text-gray-800 mb-6">
-                        Your Gateway to Business Success in UAE
-                    </h1>
-                    <p class="text-xl text-gray-600 mb-8">
-                        Comprehensive business solutions to help you establish and grow your presence in the UAE market.
-                    </p>
-                    <a href="#services" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition shadow-lg">
-                        Explore Services
-                    </a>
-                </div>
-                <div class="md:w-1/2 mt-10 md:mt-0" data-aos="fade-left">
+                <div class="md:w-1/2 mt-10 md:mt-0 order-2 md:order-1" data-aos="fade-left">
                     <img src="https://www.dropbox.com/scl/fi/kii4gwjsthdodn9k5phpv/sharfi__Create_a_vibrant_cloud_computing-themed_image_featuri_0b061990-a07c-48ca-bf58-2471ac2ec729_1.png?rlkey=8a5vpblneb69t2wvlp2kkt0xy&st=s7qf0xyk&raw=1" alt="Business" class="rounded-lg shadow-2xl">
+                </div>
+                <div class="md:w-1/2 md:pr-12 order-1 md:order-2" data-aos="fade-right">
+                    <h1 class="text-5xl font-bold text-gray-800 mb-6 text-right">
+                        بوابتك لنجاح الأعمال في الإمارات
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 text-right">
+                        حلول أعمال شاملة لمساعدتك في تأسيس وتنمية تواجدك في السوق الإماراتي
+                    </p>
+                    <div class="text-right">
+                        <a href="#services" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition shadow-lg inline-block">
+                            استكشف خدماتنا
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,7 +70,7 @@
     <section id="services" class="py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center text-gray-800 mb-16" data-aos="fade-up">
-                Our Services
+                خدماتنا
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Company Formation -->
@@ -71,8 +80,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Company Formation</h3>
-                    <p class="text-gray-600">Expert assistance in setting up your business entity in the UAE with complete documentation support.</p>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">تأسيس الشركات</h3>
+                    <p class="text-gray-600">مساعدة متخصصة في تأسيس شركتك في الإمارات مع دعم كامل للوثائق</p>
                 </div>
 
                 <!-- Trade License -->
@@ -82,8 +91,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Trade License Assistance</h3>
-                    <p class="text-gray-600">Comprehensive support in obtaining the right trade license for your business activities.</p>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">خدمات الرخص التجارية</h3>
+                    <p class="text-gray-600">مساعدة شاملة في الحصول على الرخصة التجارية المناسبة لأنشطة عملك</p>
                 </div>
 
                 <!-- PRO Services -->
@@ -93,8 +102,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">PRO Services</h3>
-                    <p class="text-gray-600">Efficient handling of government approvals, visa processing, and legal documentation.</p>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">خدمات العلاقات الحكومية</h3>
+                    <p class="text-gray-600">إدارة فعالة للموافقات الحكومية ومعالجة التأشيرات والوثائق القانونية</p>
                 </div>
 
                 <!-- Bank Account Opening -->
@@ -104,8 +113,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Bank Account Opening</h3>
-                    <p class="text-gray-600">Professional assistance in opening corporate bank accounts in the UAE.</p>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">فتح الحسابات المصرفية</h3>
+                    <p class="text-gray-600">مساعدة احترافية في فتح الحسابات المصرفية للشركات في الإمارات</p>
                 </div>
 
                 <!-- VAT & Tax Consultancy -->
@@ -115,8 +124,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">VAT & Tax Consultancy</h3>
-                    <p class="text-gray-600">Expert guidance on tax registration, VAT compliance, and financial planning.</p>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">استشارات ضريبة القيمة المضافة</h3>
+                    <p class="text-gray-600">إرشادات خبيرة في التسجيل الضريبي والامتثال لضريبة القيمة المضافة والتخطيط المالي</p>
                 </div>
 
                 <!-- Office Solutions -->
@@ -126,8 +135,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Office & Virtual Address Solutions</h3>
-                    <p class="text-gray-600">Flexible office spaces, virtual offices, and professional mailing addresses.</p>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">حلول المكاتب والعناوين الافتراضية</h3>
+                    <p class="text-gray-600">مساحات مكتبية مرنة، مكاتب افتراضية، وعناوين بريدية احترافية</p>
                 </div>
 
                 <!-- Business Consulting -->
@@ -138,8 +147,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Business Consulting</h3>
-                    <p class="text-gray-600">Strategic guidance and expertise to help your business grow and expand.</p>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">الاستشارات التجارية</h3>
+                    <p class="text-gray-600">توجيه استراتيجي وخبرة لمساعدة عملك على النمو والتوسع</p>
                 </div>
 
                 <!-- Renewals & Amendments -->
@@ -149,8 +158,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Renewals & Amendments</h3>
-                    <p class="text-gray-600">Seamless management of trade license renewals and company modifications.</p>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">التجديدات والتعديلات</h3>
+                    <p class="text-gray-600">إدارة سلسة لتجديد الرخص التجارية وتعديلات الشركات</p>
                 </div>
 
                 <!-- Trademark Registration -->
@@ -160,8 +169,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Trademark Registration</h3>
-                    <p class="text-gray-600">Protect your brand identity through professional trademark registration services.</p>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">تسجيل العلامات التجارية</h3>
+                    <p class="text-gray-600">حماية هوية علامتك التجارية من خلال خدمات تسجيل العلامات التجارية الاحترافية</p>
                 </div>
             </div>
         </div>
@@ -171,49 +180,49 @@
     <section id="contact" class="py-20 bg-blue-50">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8" data-aos="fade-up">
-                <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Get In Touch</h2>
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">تواصل معنا</h2>
                 <form class="space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <input type="text" placeholder="Name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
-                        <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        <input type="text" placeholder="الاسم" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        <input type="email" placeholder="البريد الإلكتروني" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
                     </div>
-                    <input type="text" placeholder="Subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
-                    <textarea placeholder="Message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                    <input type="text" placeholder="الموضوع" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <textarea placeholder="الرسالة" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
                     <button class="w-full bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">
-                        Send Message
+                        إرسال الرسالة
                     </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer (Arabic version) -->
     <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">UAE Business</h3>
-                    <p class="text-gray-400">Your trusted partner for business success in the UAE.</p>
+                    <h3 class="text-xl font-bold mb-4">حلول الأعمال</h3>
+                    <p class="text-gray-400">شريكك الموثوق للنجاح في الإمارات</p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <h4 class="text-lg font-semibold mb-4">روابط سريعة</h4>
                     <ul class="space-y-2">
-                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">الرئيسية</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">خدماتنا</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">اتصل بنا</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <h4 class="text-lg font-semibold mb-4">معلومات الاتصال</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li>Dubai, UAE</li>
-                        <li>Email: info@uaebusiness.com</li>
-                        <li>Phone: +971 XX XXX XXXX</li>
+                        <li>دبي، الإمارات العربية المتحدة</li>
+                        <li>البريد الإلكتروني: info@uaebusiness.com</li>
+                        <li>الهاتف: +971 XX XXX XXXX</li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
-                    <div class="flex space-x-4">
+                    <h4 class="text-lg font-semibold mb-4">تابعنا</h4>
+                    <div class="flex gap-4">
                         <!-- Facebook -->
                         <a href="#" class="text-gray-400 hover:text-white transition">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -242,12 +251,13 @@
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 UAE Business. All rights reserved.</p>
+                <p>جميع الحقوق محفوظة © 2024 حلول الأعمال</p>
             </div>
         </div>
     </footer>
 
     <script>
+        // Same AOS initialization as English version
         AOS.init({
             duration: 800,
             once: true,
@@ -265,23 +275,7 @@
             }
         });
 
-        window.addEventListener('resize', function() {
-            AOS.refresh();
-        });
-
-        window.addEventListener('orientationchange', function() {
-            setTimeout(function() {
-                AOS.refresh();
-            }, 100);
-        });
-
-        window.addEventListener('load', function() {
-            AOS.refresh();
-        });
-
-        document.addEventListener('touchend', function() {
-            AOS.refresh();
-        });
+        // ... rest of the scripts ...
     </script>
 </body>
 </html> 
