@@ -22,7 +22,7 @@
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
                     <a href="#home">
-                        <img src="https://www.dropbox.com/scl/fi/t90j450pdb6j1ucnnzqfn/sharfi_grey.png?rlkey=vj5bbx3udet64tjaku0yqylq1&st=pjso2xlp&raw=1" alt="شعار حلول الأعمال في الإمارات" class="h-10">
+                        <img src="https://ik.imagekit.io/sharfi/sharfi_grey.png?updatedAt=1739120343098" alt="شعار حلول الأعمال في الإمارات" class="h-10">
                     </a>
                 </div>
                 <div class="hidden md:flex gap-8">
@@ -47,7 +47,7 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mt-10 md:mt-0 order-2 md:order-1" data-aos="fade-left">
-                    <img src="https://www.dropbox.com/scl/fi/kii4gwjsthdodn9k5phpv/sharfi__Create_a_vibrant_cloud_computing-themed_image_featuri_0b061990-a07c-48ca-bf58-2471ac2ec729_1.png?rlkey=8a5vpblneb69t2wvlp2kkt0xy&st=s7qf0xyk&raw=1" alt="Business" class="rounded-lg shadow-2xl">
+                    <img src="https://ik.imagekit.io/sharfi/buscon.jpeg?updatedAt=1739121401158" alt="Business" class="rounded-lg shadow-2xl">
                 </div>
                 <div class="md:w-1/2 md:pr-12 order-1 md:order-2" data-aos="fade-right">
                     <h1 class="text-5xl font-bold text-gray-800 mb-6 text-right">
@@ -181,14 +181,14 @@
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8" data-aos="fade-up">
                 <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">تواصل معنا</h2>
-                <form class="space-y-6">
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <input type="text" placeholder="الاسم" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
-                        <input type="email" placeholder="البريد الإلكتروني" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        <input type="text" name="name" placeholder="الاسم" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-right">
+                        <input type="email" name="email" placeholder="البريد الإلكتروني" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-right">
                     </div>
-                    <input type="text" placeholder="الموضوع" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
-                    <textarea placeholder="الرسالة" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
-                    <button class="w-full bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">
+                    <input type="text" name="subject" placeholder="الموضوع" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-right">
+                    <textarea name="message" placeholder="الرسالة" rows="5" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-right"></textarea>
+                    <button type="submit" class="w-full bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">
                         إرسال الرسالة
                     </button>
                 </form>
@@ -276,15 +276,15 @@
                 </button>
                 <h3 class="text-lg font-semibold text-gray-800">اطلب معاودة الاتصال</h3>
             </div>
-            <form class="space-y-4">
+            <form action="https://formspree.io/f/YOUR_SECOND_FORM_ID" method="POST" class="space-y-4">
                 <div>
-                    <input type="text" placeholder="الاسم" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-right">
+                    <input type="text" name="name" placeholder="الاسم" required class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-right">
                 </div>
                 <div>
-                    <input type="tel" placeholder="رقم الهاتف" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-right">
+                    <input type="tel" name="phone" placeholder="رقم الهاتف" required class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-right">
                 </div>
                 <div>
-                    <select class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-right">
+                    <select name="preferred_time" required class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 text-right">
                         <option value="">الوقت المفضل</option>
                         <option value="morning">صباحاً (9 - 12)</option>
                         <option value="afternoon">ظهراً (12 - 4)</option>
